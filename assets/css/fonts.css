@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Conv_Curse_Casual';
+    src: url('../fonts/Curse_Casual.eot');
+    src: url('../fonts/Curse_Casual.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/curse_casual-webfont.woff') format('woff'),
+    url('../fonts/curse_casual-webfont.woff2') format('woff2'),
+    url('../fonts/Curse_Casual.ttf') format('truetype'),
+    url('../fonts/Curse_Casual.svg#Conv_Curse_Casual') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
