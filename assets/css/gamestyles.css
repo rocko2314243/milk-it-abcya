@@ -1,0 +1,85 @@
+html{
+    height:100%;
+    min-height:100%;
+}
+
+body
+{
+    background-color: black;
+    margin: 0px;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+canvas,img {
+    -webkit-transform-origin: 0 0px;
+    transform-origin: 0 0px;
+    position: absolute;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    cursor: default;
+    }
+
+#contentWrapper { /* Prevent scrolling on iOS */
+    position: fixed;
+}
+
+#gameWrapper {
+    -webkit-transform-origin: 0 0px;
+    transform-origin: 0 0px;
+    position: absolute;
+    visibility: hidden;
+}
+
+/* Rotate image */
+#orientationBlocker {
+    background-color: #ffffff;
+    display:none;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0px;
+}
+
+/* iPhone ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    #orientationBlocker {
+        background-color: #ffffff;
+        display:none;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 100px;
+    }
+}
+
+#imgRotate {
+    width: auto;
+    max-height: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
